@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/924e2eb5f2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">VV</h1 class="logo">
+                <ul id="sidemenu">
+                    <li></i><a href="#header"><i class="fa-solid fa-house fa-sm"></i>&nbsp;&nbsp;Home</a></li>
+                    <li></i><a href="#about"><i class="fa-solid fa-address-card fa-sm"></i>&nbsp;&nbsp;About</a></li>
+                    <li></i><a href="#skill-Page"><i class="fa-solid fa-bell-concierge fa-sm"></i>&nbsp;&nbsp;Skills</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-briefcase fa-sm"></i>&nbsp;&nbsp;Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-address-book fa-sm"></i>&nbsp;&nbsp;Contact Us</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark kp" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars kp" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi There!</h1>
+                <h1>I'm <b>Vyshnavi Vishnumolakala</b></h1>
+                <!-- <p>Web Developer</p> -->
+                <div class="show-hide-text">
+                    <div id="text" class="text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------- About ------------------------------->
+    <div id="about">
+        <div class="conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src=" vyshuu-Photoroom.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Vyshnavi Vishnumolakala, currently in my 3rd year pursuing a Bachelor's in Technology with a major in Computer 
+                        Science and Engineering at SRM University, Andhra Pradesh. I am from Andhra Pradesh.I cultivated a deep passion for
+                         programming, specializing as a frontend developer and enthusiastic problem solver. I find joy in crafting visually 
+                         appealing and seamlessly functional user interfaces, which is evident in various front-end development projects that 
+                         have enriched my coding skills.
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Education</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>B. Tech</span><br>• SRM AP University<br>• GPA: 7.53/10</li>
+                            <li><span>Higher Secondary Certificate</span><br>• Narayana Junior college, Guntur<br>• 12th Grade percentage: 85.7</li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front-End Developer</span><br> • SmartED <br> • 2024</li>
+                            <li><span>Front-End Developer</span><br> • Trio's Technologies <br> • 2024</li>
+                            <li><span>Front-End Developer</span><br> • Prodigy InfoTech <br> • 2024</li>
+                        </ul>
+
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Skilld -->
+    <section id="skill-Page">
+
+        <div class="skillsContainer">
+          <div class="skillsHeading">
+            <h1 class="skillHeading">SKILLS</h1>
+  
+            <div class="skills" id="skill-Cards">
+              <div class="html skillCard">
+                <img class="skillImage" src=" html.png" alt="" />
+                <h2>HTML</h2>
+              </div>
+              <div class="css skillCard">
+                <img class="skillImage" src=" css.png" alt="" />
+                <h2>CSS</h2>
+              </div>
+              <div class="js skillCard">
+                <img class="skillImage" src=" js (1).png" alt="" />
+                <h2>JavaScript</h2>
+              </div>
+              <div class="react skillCard">
+                <img class="skillImage" src=" react.png" alt="" />
+                <h2>React Js</h2>
+              </div>
+              <!-- <div class="tailwind skillCard">
+                <img class="skillImage" src=" tailwind.png" alt="" />
+                <h2>Tailwind</h2>
+              </div> -->
+              <div class="bootstrap skillCard">
+                <img class="skillImage" src=" bootstrap.png" alt="" />
+                <h2>Bootstrap</h2>
+              </div>
+              <div class="gsap skillCard">
+                <img class="skillImage" src=" greensock@2x.png" alt="" />
+                <h2>GSAP</h2>
+              </div>
+              <div class="cPlusPlus skillCard">
+                <img class="skillImage" src=" c-.png" alt="" />
+                <h2>C/C++</h2>
+              </div>
+              <!-- <div class="java skillCard">
+                <img class="skillImage" src=" java.png" alt="" />
+                <h2>Java</h2>
+              </div> -->
+              <div class="python skillCard">
+                <img class="skillImage" src=" python.png" alt="" />
+                <h2>Python</h2>
+              </div>
+              <div class="gitAndGitHub skillCard">
+                <img class="skillImage" src=" git.png" alt="" />
+                <h2>Git&Github</h2>
+              </div>
+              <div class="mysql skillCard">
+                <img class="skillImage" src=" mysql.png" alt="" />
+                <h2>My SQL</h2>
+              </div>
+              <div class="jquery skillCard">
+                <img class="skillImage" src=" Jquery.webp" alt="" />
+                <h2>JQuery</h2>
+              </div>
+              
+              
+              
+              <div class="jquery skillCard">
+                <img class="skillImage"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNyOe4xJhJFvDUbm1OSFnnEc4plFTvdYrBmOfNf-YUNA&s"
+                  alt="" />
+                <h2>MongoDB</h2>
+              </div>
+              
+              <div class="jquery skillCard">
+                <img class="skillImage" src="https://miro.medium.com/v2/resize:fit:800/1*bc9pmTiyKR0WNPka2w3e0Q.png"
+                  alt="" />
+                <h2>NodeJs</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+
+
+    <!-- -------------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="Social-img" src=" tic-toe.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>I developed a classic Tic Tac Toe game, offering a simple yet engaging way to showcase my skills in 
+                            JavaScript, HTML and CSS. This project demonstrates
+                             my understanding of game logic, UI/UX design, and responsive design principles.</p>
+                        <a href="https://github.com/vyshnavivishnumolakala/PRODIGY_WD_03.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="Social-img" src=" nav-bar.jpg" alt="">
+                    <div class="layer">
+                        <h3>Navbar</h3>
+                        <p>I developed a responsive Navbar for a website using HTML, CSS, and JavaScript. This project showcases my 
+                            front-end development skills, particularly in creating interactive and user-friendly navigation interfaces.</p>
+                        <a href="https://github.com/vyshnavivishnumolakala/PRODIGY_WD_01.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="Social-img" src=" port.jpg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>This portfolio showcases a collection of my projects and skills in web development, particularly using HTML,
+                             CSS, JavaScript, and other technologies. It's designed to provide a comprehensive view of my capabilities, 
+                             creativity, and technical proficiency.</p>
+                        <a href="https://github.com/vyshnavivishnumolakala/PRODIGY_WD_04.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------------contact ---------------------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vyshnavivishnumolakalaa@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9550239347</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/v.vyshnavii" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/vyshnavi-vishnumolakala-710a07258" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/vyshnavivishnumolakala" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="vyshnavi resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div id="copy" class="copywrite">
+            <p>Copyright &copy; vyshnavi. Made with <i class="fa-solid fa-heart"></i> by Vyshnavi Vishnumolakala</p>
+        </div>
+     </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynW6gpHsTy9PbBDujk2eivbf6rHh8_UkZZQ7WruHLaG--BFuvXvk9cPXjOkGM8ZQtc/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>

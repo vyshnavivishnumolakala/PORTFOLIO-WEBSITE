@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'sans-serif';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    color: #fff;
+}
+b{
+    color: #9067c6;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url( vyshuu-Photoroom.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+
+    background-position: 800px 100px;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    color: #9067c6;
+    cursor: pointer;
+    font-size: 42px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;  
+    height: 3px;
+    position: absolute;
+    background: #9067c6;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.header-text p{
+    font-size: 52px;
+}
+
+/* ======================about ====================================*/
+#about{
+    padding: 80px 20px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.about-col-2{
+    flex-basis: 50%;
+}
+
+.about-col-2 p{
+    font-size: 20px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #9067c6;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;  
+    height: 3px;
+    position: absolute;
+    background: #9067c6;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+
+.tab-contents{
+    font-size: 23px;
+}
+
+.tab-contents ul li{
+    list-style: none; 
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #9067c6;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+ .skillsContainer {
+    margin-top: 50px;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .skillsHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skillHeading {
+    font-size: 60px;
+    font-weight: 700;
+    color: #9067c6;
+    margin-bottom: 35px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 52px;
+  }
+  
+  .skillCard {
+    height: 12vw;
+    width: 12vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+  }
+  
+  .skillCard:hover {
+    background-color: #9067c6;
+    transform: scale(1.1);
+    color: black;
+  }
+  
+  .skillCard h2 {
+    margin-top: 10px;
+  }
+  
+  .html {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .css {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .js {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .react {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  /* .tailwind {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  } */
+  
+  .bootstrap {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .gsap {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .skillImage {
+    height: 85px;
+    width: 85px;
+  }
+  
+  .wordpress {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .cPlusPlus {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  /* .java {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  } */
+  
+  .python {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .gitAndGitHub {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .mysql {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .jquery {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .skillsContainer {
+      width: 100%;
+      height: 170vh;
+      margin-top: 20px; 
+    }
+  
+    .skills {
+      height: auto; 
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5px; 
+    }
+  
+    .skillCard {
+      height: 110px; 
+      width: 45%; 
+      margin: 10px 2.5%;
+      gap: 1vh; 
+    }
+  
+    .skillCard h2 {
+      font-size: 1rem; 
+    }
+  
+    .skillImage {
+      height: 40px; 
+      width: 40px; 
+    }
+  
+    .skillsHeading h1 {
+      font-size: 45px;
+    }
+  }
+
+/* ---------------Portfolio--------------- */
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list img{
+    height: 500px;
+    width: 400px;
+}
+.Social-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.work img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0; 
+    background: linear-gradient(rgba(0,0,0,0.6), #bc9ae7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 18px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #9067c6;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+    
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #9067c6;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #9067c6;
+}
+
+/* ------------------------contact --------------------- */
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #9067c6;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #9067c6;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    transform: scale(1.5);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #9067c6;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copywrite{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copywrite i{
+    color: red;
+}
+
+/* -----------CSS FOR SMALL SCREEN------------- */
+nav .kp{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{ 
+        background-image: url( vyshuu-Photoroom.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 10px;
+    }
+    .header-text p{
+        font-size: 30px;
+    }
+
+    nav .kp{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #9067c6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .kp{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+#msg{
+    color: #90c676;
+    margin-top: -40px;
+    display: block;  
+}
+.show-hide-text{
+    width: 100%;
+    text-align: left; 
+}
+
+.text {
+    font-size: 50px;
+    display: inline-block;
+    overflow: hidden;
+    color: #9067c6;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
